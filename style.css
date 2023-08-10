@@ -77,3 +77,34 @@ main {
   height: auto;
   display: block;
 }
+
+/* Your existing styles */
+
+.card {
+  /* Existing styles for the card */
+  position: relative;
+  overflow: hidden;
+  animation: cardMovement 5s infinite alternate; /* Apply continuous movement animation */
+}
+
+.card:hover {
+  animation: cardShock 0.2s ease-in-out; /* Apply shock animation on hover */
+}
+
+@keyframes cardMovement {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes cardShock {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
