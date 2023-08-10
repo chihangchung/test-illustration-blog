@@ -57,3 +57,23 @@ main {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove any spacing below the image */
 }
+
+/* Your existing styles */
+
+.card {
+  /* Existing styles for the card */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Add a transition for smooth movement */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+  /* You can adjust the translateY value and other properties to customize the effect */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
